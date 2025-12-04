@@ -1,26 +1,64 @@
-# Projeto: Grafo com Dijkstra
+# 📘 Projeto 2: Grafo com Algoritmo de Dijkstra**
 
-Este repositório contém uma implementação simples do algoritmo de Dijkstra em Python.
+# Grafo com Dijkstra – Estrutura de Dados
 
-## Estrutura do projeto
-```
-src/
- ├── dijkstra.py
- ├── show_graph.py
- └── main.py
-```
+## 📌 Nome do Projeto
+Implementação do Algoritmo de Dijkstra para Menor Caminho
 
-## Como executar
+## 🧩 Descrição do Problema / Solução
+Este projeto implementa o algoritmo de **Dijkstra**, utilizado para calcular as menores distâncias  
+de um vértice inicial até todos os outros em um grafo orientado com pesos positivos.
 
-### 1. Rodar o script principal:
-```
+A estrutura utilizada é o modelo de lista de adjacência com pesos, e o algoritmo é implementado  
+com fila de prioridade (heap), garantindo eficiência.
+
+---
+
+## 🧪 Funcionalidades Implementadas
+### ✔ Requisitos mínimos:
+- Representação de grafo com pesos (lista de adjacência)
+- Exibição textual do grafo
+- Execução completa do algoritmo
+
+### ✔ Funcionalidades avançadas (nota 9–10):
+- Algoritmo clássico: **Dijkstra**  
+  - Calcula distância mínima  
+  - Apresenta resultado final em formato textual
+
+---
+
+## 🛠️ Linguagem e Versão
+- Python **3.11+**
+- Biblioteca usada: `heapq` (fila de prioridade nativa)
+
+---
+
+## ▶️ Instruções de Execução
+Execute na pasta raiz:
+
+```bash
 python src/main.py
 ```
+### 📥 Exemplo de Entrada
+graph = {
+    "A": [("B", 4), ("C", 2)],
+    "B": [("C", 5), ("D", 10)],
+    "C": [("E", 3)],
+    "D": [],
+    "E": [("D", 4)]
+}
+### 📤 Exemplo de Saída
+ Grafo com Pesos 
+A -> B (4), C (2)
+B -> C (5), D (10)
+C -> E (3)
+D ->
+E -> D (4)
 
-## Funcionalidades
-- Impressão textual do grafo com pesos
-- Execução do algoritmo de Dijkstra
-- Distâncias mínimas a partir do vértice inicial
+{'A': 0, 'C': 2, 'B': 4, 'E': 5, 'D': 9}
+
+## Link do Vídeo
+(https://youtu.be/XZB94kWNOTc?si=MICkh11C2QctF8Ys)
 
 ## Autor
-Marcello Sampaio
+Marcelo Sampaio
